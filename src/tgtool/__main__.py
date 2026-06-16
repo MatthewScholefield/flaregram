@@ -1,4 +1,4 @@
-"""Allow running with `python -m tgcli`."""
+"""Allow running with `python -m tgtool`."""
 
 from .cli import main
 

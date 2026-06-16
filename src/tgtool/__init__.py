@@ -1,4 +1,4 @@
-"""tgcli - a minimal Telegram bot CLI."""
+"""tgtool - a minimal Telegram bot CLI."""
 
 from .cli import app, main
 

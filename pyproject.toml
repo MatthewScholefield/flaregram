@@ -1,5 +1,5 @@
 [project]
-name = "tgcli"
+name = "tgtool"
 version = "0.1.0"
 description = "A minimal Telegram bot CLI for sending and reading messages"
 readme = "README.md"
@@ -24,11 +24,11 @@ classifiers = [
 ]
 
 [project.scripts]
-tgcli = "tgcli.cli:app"
+tgtool = "tgtool.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/MatthewScholefield/tgcli"
-Repository = "https://github.com/MatthewScholefield/tgcli"
+Homepage = "https://github.com/MatthewScholefield/tgtool"
+Repository = "https://github.com/MatthewScholefield/tgtool"
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]

@@ -1,4 +1,4 @@
-# tgcli
+# tgtool
 
 A minimal command-line tool for interacting with Telegram via a **bot token**.
 List chats that have messaged your bot, read recent messages, and send new
@@ -11,13 +11,13 @@ Every command prints friendly, human-readable output by default and supports
 
 ```bash
 # from PyPI
-pip install tgcli
+pip install tgtool
 
 # or with uv
-uv tool install tgcli
+uv tool install tgtool
 
 # straight from source
-uv tool install git+https://github.com/MatthewScholefield/tgcli
+uv tool install git+https://github.com/MatthewScholefield/tgtool
 ```
 
 ## Authentication
@@ -31,51 +31,51 @@ export TELEGRAM_BOT_TOKEN=123456:ABC-DEF
 
 ## Commands
 
-### `tgcli me`
+### `tgtool me`
 
 Verify the token and show the bot's identity.
 
 ```bash
-tgcli me
+tgtool me
 ```
 
-### `tgcli chats`
+### `tgtool chats`
 
 List chats that have recently messaged the bot (the easiest way to discover
 chat ids). Send a message to your bot first, then run:
 
 ```bash
-tgcli chats
-tgcli chats --format json
+tgtool chats
+tgtool chats --format json
 ```
 
-### `tgcli send`
+### `tgtool send`
 
 Send a text message to a chat.
 
 ```bash
-tgcli send 555 "Hello there!"
-tgcli send @channelusername "Announcement" --parse-mode HTML
-tgcli send 555 "replying!" --reply-to 42 --silent
+tgtool send 555 "Hello there!"
+tgtool send @channelusername "Announcement" --parse-mode HTML
+tgtool send 555 "replying!" --reply-to 42 --silent
 ```
 
-### `tgcli updates`
+### `tgtool updates`
 
 Show recent messages the bot has received, optionally filtered to one chat.
 
 ```bash
-tgcli updates
-tgcli updates --chat-id 555 --limit 50
-tgcli updates -c 555 -f json
+tgtool updates
+tgtool updates --chat-id 555 --limit 50
+tgtool updates -c 555 -f json
 ```
 
-### `tgcli chat`
+### `tgtool chat`
 
 Show information about a specific chat.
 
 ```bash
-tgcli chat 555
-tgcli chat @channelusername
+tgtool chat 555
+tgtool chat @channelusername
 ```
 
 ## Global options
