@@ -1,0 +1,6 @@
+"""tgcli - a minimal Telegram bot CLI."""
+
+from .cli import app, main
+
+__all__ = ["app", "main"]
+__version__ = "0.1.0"
