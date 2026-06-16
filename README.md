@@ -1,4 +1,4 @@
-# tgtool
+# flaregram
 
 A minimal command-line tool for interacting with Telegram via a **bot token**.
 List chats that have messaged your bot, read recent messages, and send new
@@ -11,13 +11,13 @@ Every command prints friendly, human-readable output by default and supports
 
 ```bash
 # from PyPI
-pip install tgtool
+pip install flaregram
 
 # or with uv
-uv tool install tgtool
+uv tool install flaregram
 
 # straight from source
-uv tool install git+https://github.com/MatthewScholefield/tgtool
+uv tool install git+https://github.com/MatthewScholefield/flaregram
 ```
 
 ## Authentication
@@ -31,51 +31,51 @@ export TELEGRAM_BOT_TOKEN=123456:ABC-DEF
 
 ## Commands
 
-### `tgtool me`
+### `flaregram me`
 
 Verify the token and show the bot's identity.
 
 ```bash
-tgtool me
+flaregram me
 ```
 
-### `tgtool chats`
+### `flaregram chats`
 
 List chats that have recently messaged the bot (the easiest way to discover
 chat ids). Send a message to your bot first, then run:
 
 ```bash
-tgtool chats
-tgtool chats --format json
+flaregram chats
+flaregram chats --format json
 ```
 
-### `tgtool send`
+### `flaregram send`
 
 Send a text message to a chat.
 
 ```bash
-tgtool send 555 "Hello there!"
-tgtool send @channelusername "Announcement" --parse-mode HTML
-tgtool send 555 "replying!" --reply-to 42 --silent
+flaregram send 555 "Hello there!"
+flaregram send @channelusername "Announcement" --parse-mode HTML
+flaregram send 555 "replying!" --reply-to 42 --silent
 ```
 
-### `tgtool updates`
+### `flaregram updates`
 
 Show recent messages the bot has received, optionally filtered to one chat.
 
 ```bash
-tgtool updates
-tgtool updates --chat-id 555 --limit 50
-tgtool updates -c 555 -f json
+flaregram updates
+flaregram updates --chat-id 555 --limit 50
+flaregram updates -c 555 -f json
 ```
 
-### `tgtool chat`
+### `flaregram chat`
 
 Show information about a specific chat.
 
 ```bash
-tgtool chat 555
-tgtool chat @channelusername
+flaregram chat 555
+flaregram chat @channelusername
 ```
 
 ## Global options

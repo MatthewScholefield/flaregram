@@ -8,7 +8,7 @@ import httpx
 import respx
 from typer.testing import CliRunner
 
-from tgtool.cli import app
+from flaregram.cli import app
 
 runner = CliRunner()
 TOKEN = "123456:ABC-DEF"

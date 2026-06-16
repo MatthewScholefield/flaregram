@@ -12,7 +12,7 @@ from .models import Chat
 from .output import Renderer
 
 app = typer.Typer(
-    name="tgtool",
+    name="flaregram",
     help=(
         "A minimal Telegram bot CLI. Authenticate with a bot token to "
         "list chats, read recent messages, and send new ones."

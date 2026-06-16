@@ -6,8 +6,8 @@ import httpx
 import pytest
 import respx
 
-from tgtool.client import TelegramClient, TelegramError, timestamp
-from tgtool.models import BotInfo, Chat, Message, Update, User
+from flaregram.client import TelegramClient, TelegramError, timestamp
+from flaregram.models import BotInfo, Chat, Message, Update, User
 
 TOKEN = "123456:ABC-DEF"
 BASE = "https://api.telegram.org"

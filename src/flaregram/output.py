@@ -79,7 +79,7 @@ class Renderer:
             self.console.print("[dim]No chats found.[/]")
             self.console.print(
                 "[dim]Send a message to your bot first, then run "
-                "'tgtool chats' again.[/]"
+                "'flaregram chats' again.[/]"
             )
             return
         table = self._table(

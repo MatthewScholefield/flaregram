@@ -1,5 +1,5 @@
 [project]
-name = "tgtool"
+name = "flaregram"
 version = "0.1.0"
 description = "A minimal Telegram bot CLI for sending and reading messages"
 readme = "README.md"
@@ -24,11 +24,11 @@ classifiers = [
 ]
 
 [project.scripts]
-tgtool = "tgtool.cli:app"
+flaregram = "flaregram.cli:app"
 
 [project.urls]
-Homepage = "https://github.com/MatthewScholefield/tgtool"
-Repository = "https://github.com/MatthewScholefield/tgtool"
+Homepage = "https://github.com/MatthewScholefield/flaregram"
+Repository = "https://github.com/MatthewScholefield/flaregram"
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]

@@ -1,4 +1,4 @@
-"""tgtool - a minimal Telegram bot CLI."""
+"""flaregram - a minimal Telegram bot CLI."""
 
 from .cli import app, main
 

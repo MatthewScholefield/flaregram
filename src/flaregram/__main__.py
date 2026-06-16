@@ -1,4 +1,4 @@
-"""Allow running with `python -m tgtool`."""
+"""Allow running with `python -m flaregram`."""
 
 from .cli import main
 
